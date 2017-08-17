@@ -16,6 +16,16 @@
 </head>
 
 <body>
+  <div> <!--Extra jQuery and Bootstrap stuff-->
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  </div>
+  <script>
+    $('form').keyup(function(e) {
+      return e.which !== 13
+    });
+  </script>
   <!--Header-->
   <div class="centered-text">
     <!--Needs coding background and text highlighting to be readable.
@@ -23,9 +33,13 @@
     <h1 class="monospace center-text">&lt;DPC /&gt;</h1>
     <i><p class="monospace center-text">&lt;DECA Programming Club&gt;</p></i>
   </div>
-
-  <!--Picture might go better here actually.-->
-
+  <br>
+  <div>
+    <img src="media/code.png">
+  </div>
+  <br>
+  <br>
+  <br>
   <!--What We'll Cover-->
   <div class="center-text">
     <h2 class="monospace">What We'll Cover</h1>
@@ -49,11 +63,11 @@
 
   <!--CodeDay-->
   <div style="relative">
-    <img style="margin-left: 20px; margin-top: 80px; position: absolute; z-index: 2; width: 375px; height: 175px;" src="media/codedaypicture.png" class="img-fluid pull-xs-left" alt="CodeDay">
+    <img style="margin-left: 40px; margin-top: 120px; position: absolute; z-index: 2; width: 375px; height: 175px;" src="media/codedaypicture.png" class="img-fluid pull-xs-left" alt="CodeDay">
     <video style="position: absolute; z-index: 1; width: 1536px; height: 864px;" preload="" muted="" autoplay="" loop="">
             <source src="media/codedayvideo.mp4" type="video/mp4">
     </video>
-    <ul style="margin-left: 20px; margin-top: 250px; position: absolute; z-index: 2;">
+    <ul style="margin-left: 40px; margin-top: 290px; position: absolute; z-index: 2;">
       <li style="color: white" class="figure-caption">Fun</li>
       <li style="color: white" class="figure-caption">24 Hours</li>
       <li style="color: white" class="figure-caption">Meet People</li>
@@ -80,15 +94,17 @@
       <br>
       <br>
       <br>
-      <br>
-      <br>
-      <br>
     </div>
 
+    <center><div style="background-color: gray; width: 80%; height: 2px;"></center>
+
+    <br>
+    <br>
+    <br>
     <!--Sign Up-->
     <div class="center-text">
       <h2 class="monospace">Sign Up</h2>
-      <center><form action="buffer.php" method="post">
+      <center><form action="buffer.php" method="post" id="formid">
         <table>
           <tr>
             <td>
@@ -100,7 +116,7 @@
             <td>
               <div class="form-group">
                 <label for="lastName">Last Name:</label>
-                <input type="text" name="first_name" id="lastName" class="form-control">
+                <input type="text" name="last_name" id="lastName" class="form-control">
               </div>
             </td>
           </tr>
@@ -122,7 +138,7 @@
             <td>
               <div class="form-group">
                 <label for="grade">Grade</label>
-                <select>
+                <select name="grade">
                   <option value="9th">9th</option>
                   <option value="10th">10th</option>
                   <option value="11th">11th</option>
@@ -151,16 +167,16 @@
               <label for="meeting_day_tuesday">Tuesday</label>
             </td>
           </tr>
+          <tr>
+            <td>
+              <input type="submit" value="Submit" class="btn btn-primary">
+            </td>
+          </tr>
         </table>
       </form></center>
     </div>
   </div>
 
-  <div> <!--Extra jQuery and Bootstrap stuff-->
-    <!-- jQuery first, then Bootstrap JS. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-  </div>
 </body>
 
 </html>
