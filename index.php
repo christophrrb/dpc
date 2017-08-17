@@ -61,9 +61,101 @@
     </ul>
   </div>
 
-  <!--Requirements-->
-  <div>
+<!--After Video Div-->
+  <div style="margin-top: 825px;">
+    <!--Requirements-->
+    <div class="center-text">
+      <h2 class="monospace">Requirements</h2>
+      <figure class="figure">
+        <img src="media/laptop.png" class="figure-img img-fluid img-rounded other-icons" alt="Laptop">
+        <figcaption class="figure-caption">Laptop</figcaption>
+      </figure>
+      <figure class="figure">
+        <img src="media/fivedollars.jpg" class="figure-img img-fluid img-rounded other-icons" alt="Five Dollars">
+        <figcaption class="figure-caption">Five Dollars</figcaption>
+      </figure>
+      <!--Contact Info-->
+      <!--Interest meeting is August 21st.-->
+      <!--First club meeting is August 28th or 29th.-->
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+
+    <!--Sign Up-->
+    <div class="center-text">
+      <h2 class="monospace">Sign Up</h2>
+      <center><form action="buffer.php" method="post">
+        <table>
+          <tr>
+            <td>
+              <div class="form-group left">
+                <label for="firstName">First Name:</label>
+                <input type="text" name="first_name" id="firstName" class="form-control">
+              </div>
+            </td>
+            <td>
+              <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="first_name" id="lastName" class="form-control">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="form-group">
+                <label for="email_id">Email:</label>
+                <input type="email" name="email" id="email_id" class="form-control">
+              </div>
+            </td>
+            <td>
+              <div class="form-group">
+                <label for="phoneNumber">Phone: </label>
+                <input type="number" name="phone" id="phoneNumber" class="form-control">
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="form-group">
+                <label for="grade">Grade</label>
+                <select>
+                  <option value="9th">9th</option>
+                  <option value="10th">10th</option>
+                  <option value="11th">11th</option>
+                  <option value="12th">12th</option>
+                </select>
+              </div>
+            </td>
+            <td>
+              <div class="form-group">
+                <label>Do you want a club shirt?</label>
+                <br>
+                <input type="radio" value="Yes" name="club_shirt" id="club_shirt_yes">
+                <label for="club_shirt_yes">Yes</label>
+                <br>
+                <input type="radio" value="No" name="club_shirt" id="club_shirt_no">
+                <label for="club_shirt_no">No</label>
+              </div>
+            </td>
+            <td>
+              <label>When would you like to meet?</label>
+              <br>
+              <input type="radio" value="Monday" name="meeting_day" id="meeting_day_monday">
+              <label for="meeting_day_monday">Monday</label>
+              <br>
+              <input type="radio" value="Tuesday" name="meeting_day" id="meeting_data_tuesday">
+              <label for="meeting_day_tuesday">Tuesday</label>
+            </td>
+          </tr>
+        </table>
+      </form></center>
+    </div>
   </div>
+
   <div> <!--Extra jQuery and Bootstrap stuff-->
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
