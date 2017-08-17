@@ -7,6 +7,10 @@ h1 {
   font-size: 125px;
 }
 
+h2 {
+  font-size: 75px;
+}
+
 p {
   font-size: 25px;
 }
@@ -15,6 +19,12 @@ p {
   height: 225px;
   width: 225px;
   margin: 30px;
+}
+
+.other-icons {
+  width: 400px;
+  height: 225px;
+  margin: 50px;
 }
 
 .figure-caption {
@@ -32,4 +42,8 @@ p {
 
 li {
   color: white;
+}
+
+td {
+  
 }
