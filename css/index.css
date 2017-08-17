@@ -1,0 +1,35 @@
+body {
+  margin-top: 50px;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 125px;
+}
+
+p {
+  font-size: 25px;
+}
+
+.icon {
+  height: 225px;
+  width: 225px;
+  margin: 30px;
+}
+
+.figure-caption {
+  font-size: 50px;
+  font-family: monospace;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.monospace {
+  font-family: monospace;
+}
+
+li {
+  color: white;
+}
