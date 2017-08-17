@@ -1,5 +1,4 @@
 body {
-  margin-top: 50px;
   overflow-x: hidden;
 }
 
@@ -45,5 +44,9 @@ li {
 }
 
 td {
-  
+  padding: 20px;
+}
+
+label {
+  font-size: 25px;
 }
