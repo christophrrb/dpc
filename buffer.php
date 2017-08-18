@@ -1,11 +1,11 @@
 <?php
 require 'connect.php';
 
-$first_name = $_POST['first_name'];
-$last_name = $_POST['last_name'];
+$first_name = mysqli_real_escape_string($conn, $_POST['first_name']);
+$last_name = mysqli_real_escape_string($conn, $_POST['last_name']);
 $grade = $_POST['grade'];
-$email = $_POST['email'];
-$phone = $_POST['phone'];
+$email = mysqli_real_escape_string($conn, $_POST['email']);
+$phone = mysqli_real_escape_string($conn, $_POST['phone']);
 $club_shirt = $_POST['club_shirt'];
 $meeting_day = $_POST['meeting_day'];
 
@@ -30,7 +30,6 @@ if ($result) {
   // header("refresh: 4; url=index.php");
 } else {
   echo "<br><br> Something wasn't quite right.";
-  echo "<br> Take out any apostrophes in any text fields.";
   header("refresh: 5; url=index.php");
 }
 ?>
