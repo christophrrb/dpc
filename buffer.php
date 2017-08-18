@@ -14,22 +14,23 @@ $sql = "INSERT INTO student_information (first_name, last_name, grade, email, ph
 $result = $conn->query($sql);
 
 if ($result) {
-  echo "<div
-    style='height: 800px;
+  echo '<div
+    style="height: 800px;
     width: 1500px;
 
     position: fixed;
     top: 50%;
     left: 50%;
     margin-top: -100px;
-    margin-left: -200px;'>
-      <h1 font-family=Arial>All signed up!</h1>
-      <img src='media/check.gif' style='width: 255px; height: 225px;'>
-        </div>";
-        header("refresh: 5; url=index.php");
+    margin-left: -200px;">
+      <h1 style="font-family=Arial">All signed up!</h1>
+      <img src="media/check.gif" style="width: 255px; height: 225px;">
+        </div>';
+        header("refresh: 3; url=index.php");
   // header("refresh: 4; url=index.php");
 } else {
-  echo "Something wasn't quite right.";
+  echo "<br><br> Something wasn't quite right.";
+  echo "<br> Take out any apostrophes in any text fields.";
   header("refresh: 5; url=index.php");
 }
 ?>
